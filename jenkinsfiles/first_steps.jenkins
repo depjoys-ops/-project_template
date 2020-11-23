@@ -16,5 +16,11 @@ pipeline {
                 sh 'ssh vagrant@ub1 \'hostname\''
             }
         }
+        stage("Second step") {
+            steps {
+                sh 'ssh vagrant@ub1 \'uptime\''
+            }
+        }
+
     }
 }
